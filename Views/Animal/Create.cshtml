@@ -1,0 +1,63 @@
+@model Animal
+
+@{
+    ViewBag.Title = "CreateAnimal";
+    Layout = "_Layout";
+}
+
+<h2>Заполните форму для добавления животного</h2>
+
+<div class="row">
+
+    <div class="phone_add_form col-md-6">
+
+        <form asp-action="Create" method="post">
+
+            <div class="form_row">
+                <label for="">
+                    Наименование
+                    <input asp-for="Name" type="text">
+                </label>
+            </div>
+
+            <div class="form_row">
+                <label for="">
+                    Возраст
+                    <input asp-for="Age" type="text">
+                </label>
+            </div>
+            
+            <div class="form_row">
+                <label for="">
+                    Вид животного
+                    <input asp-for="KindOfAnimal" type="text">
+                </label>
+            </div>
+            
+            <div class="form_row">
+                <label for="">
+                    Особые примечания
+                    <input asp-for="Notes" type="text">
+                </label>
+            </div>
+            
+            <div class="form_row">
+                <label for="">
+                    Цена
+                    <input asp-for="Price" type="text">
+                </label>
+            </div>
+            
+            <div class="form_row">
+                <label for="">
+                    Аватар
+                    <input asp-for="Avatar" type="text">
+                </label>
+            </div>
+            
+            <button type="submit">Создать</button>
+        </form>
+        
+    </div>
+    
+</div>

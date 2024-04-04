@@ -1,0 +1,19 @@
+@model Animal
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "_Layout";
+}
+
+<h2>@Model.Name Details</h2>
+
+<div class="details-container">
+    <img class="avatar-img" src="@Model.Avatar" alt="@Model.Name Avatar" width="200" height="200">
+    <ul>
+        <li><strong>Name:</strong> @Model.Name</li>
+        <li><strong>Age:</strong> @Model.Age</li>
+        <li><strong>Kind of Animal:</strong> @Model.KindOfAnimal</li>
+        <li><strong>Notes:</strong> @Model.Notes</li>
+        <li><strong>Price:</strong> @Model.Price</li>
+    </ul>
+</div>
